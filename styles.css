@@ -1,0 +1,135 @@
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0.158), rgba(255, 0, 0, 0.116)),url(./images/background.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(105, 105, 105, 0.493) !important;
+ }
+/* adjusting the logo place */
+ .logo{
+  z-index: 100;
+  position: fixed;
+  left: 20px;
+  top: 7px;
+  width: 80px;
+  margin-top: 4px;
+
+}
+
+ .topnav {
+   overflow: hidden;
+   background-color: rgba(51, 51, 51, 0.726);
+  padding-left: 200px;
+ }
+ 
+ /* modifing the desire options fro the top navigation menu of the div type */
+
+ .topnav a {
+   display: flex;
+   float:left;
+   color: #f2f2f2dc;
+   text-align: center;
+   padding: 32px;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ /* will make the topnav felxable when zooming and keep it clean */
+ @media screen and (max-height: 450px) {
+  .topnav {padding-top: 15px;}
+  .topenav a {font-size: 19px;}
+}
+
+
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+
+ /* modifing the desire options fro the side menu of the div type */
+ .sidenav {
+   height: 100%;
+   width: 160px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgba(51, 51, 51, 0.726);
+   overflow-x: hidden;
+   padding-top: 120px;
+ 
+ }
+ /* allow you to adjust the text format for a specific group of text as it shoes here */
+ .text{
+  text-align: center;
+  /* white-space: nowrap;  */
+ }
+
+ .text1{
+  text-align: center;
+  margin-top: 90px;
+
+ }
+ .text2{
+  text-align: center;
+  margin-top: 90px;
+ }
+
+/* the spaces between the text in the side menu (list) */
+.space{
+  line-height: 1.8;
+}
+.space1{
+  line-height: 1.8;
+}
+.space2{
+  line-height: 1.8;
+}
+
+ .main {
+   margin-left: 160px; /* Same as the width of the sidenav */
+   font-size: 28px; /* Increased text to enable scrolling */
+   padding: 0px 10px;
+ }
+ /* this will enable the flex option to play with the order and the margins and the padding */
+ .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  margin-left: 90px;
+  background-color: none;
+  display: block;
+  position: absolute;
+
+}
+
+.item{
+  margin: 10px;
+  width:270px;
+  height: 390px;
+}
+
+.overlay {
+  display: flex;
+  flex-wrap: wrap;
+	display: block;
+  position: absolute;
+  flex: 33.33%;
+  top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  opacity:0;
+	overflow: hidden;
+	height: 1%;
+  transition: .5s ease;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  margin: 10px;
+  width:270px;
+
+}
